@@ -15,6 +15,7 @@ int main() {
     std::cout << "Hello, RISC-V and Linux!" << std::endl;
     return 0;
 }
+```
 
 傅里叶变换的定义式为：
 $$X(\omega) = \int_{-\infty}^{\infty} x(t) e^{-j\omega t} dt$$

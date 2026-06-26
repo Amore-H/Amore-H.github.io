@@ -1,7 +1,11 @@
 baseURL = 'https://Amore-H.github.io/'
-languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
+locale = 'zh-cn'
 title = '我的技术与学习博客'
 theme = 'PaperMod'
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
 
 # 启用数学公式（KaTeX/MathJax）与内联 HTML 支持
 [markup.goldmark.renderer]
@@ -16,5 +20,58 @@ noClasses = false
 [params]
   env = "production"
   defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShareButtons = ["x", "linkedin"]
   # 开启数学公式全局支持
   math = true
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Amore-H"
+
+[[params.socialIcons]]
+  name = "rss"
+  url = "/index.xml"
+
+[params.homeInfoParams]
+  Title = "我的技术与学习博客"
+  Content = "记录技术、学习与实践过程。"
+
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1000
+  threshold = 0.4
+  minMatchCharLength = 0
+  keys = ["title", "permalink", "summary", "content"]
+
+[[menu.main]]
+  identifier = "posts"
+  name = "文章"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  identifier = "archives"
+  name = "归档"
+  url = "/archives/"
+  weight = 20
+
+[[menu.main]]
+  identifier = "tags"
+  name = "标签"
+  url = "/tags/"
+  weight = 30
+
+[[menu.main]]
+  identifier = "search"
+  name = "搜索"
+  url = "/search/"
+  weight = 40

@@ -1,0 +1,20 @@
+baseURL = 'https://Amore-H.github.io/'
+languageCode = 'zh-cn'
+title = '我的技术与学习博客'
+theme = 'PaperMod'
+
+# 启用数学公式（KaTeX/MathJax）与内联 HTML 支持
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+noClasses = false
+
+[params]
+  env = "production"
+  defaultTheme = "auto"
+  # 开启数学公式全局支持
+  math = true

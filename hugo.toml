@@ -1,77 +1,77 @@
 baseURL = 'https://Amore-H.github.io/'
 defaultContentLanguage = 'zh'
 locale = 'zh-cn'
-title = '我的技术与学习博客'
-theme = 'PaperMod'
+title = 'The Blog of GUI'
+THEME = 'PAPERMOD'
 
-[outputs]
-home = ["HTML", "RSS", "JSON"]
+[OUTPUTS]
+HOME = ["HTML", "RSS", "JSON"]
 
-# 启用数学公式（KaTeX/MathJax）与内联 HTML 支持
-[markup.goldmark.renderer]
-unsafe = true
+# 启用数学公式（KATEX/MATHJAX）与内联 HTML 支持
+[MARKUP.GOLDMARK.RENDERER]
+UNSAFE = TRUE
 
-[markup.highlight]
-codeFences = true
-guessSyntax = true
-lineNos = true
-noClasses = false
+[MARKUP.HIGHLIGHT]
+CODEFENCES = TRUE
+GUESSSYNTAX = TRUE
+LINENOS = TRUE
+NOCLASSES = FALSE
 
-[params]
-  env = "production"
-  defaultTheme = "auto"
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true
-  TocOpen = false
-  ShareButtons = ["x", "linkedin"]
+[PARAMS]
+  ENV = "PRODUCTION"
+  DEFAULTTHEME = "AUTO"
+  SHOWREADINGTIME = TRUE
+  SHOWSHAREBUTTONS = TRUE
+  SHOWPOSTNAVLINKS = TRUE
+  SHOWBREADCRUMBS = TRUE
+  SHOWCODECOPYBUTTONS = TRUE
+  SHOWTOC = TRUE
+  TOCOPEN = FALSE
+  SHAREBUTTONS = ["X", "LINKEDIN"]
   # 开启数学公式全局支持
-  math = true
+  MATH = TRUE
 
-[[params.socialIcons]]
-  name = "github"
-  url = "https://github.com/Amore-H"
+[[PARAMS.SOCIALICONS]]
+  NAME = "GITHUB"
+  URL = "HTTPS://GITHUB.COM/AMORE-H"
 
-[[params.socialIcons]]
-  name = "rss"
-  url = "/index.xml"
+[[PARAMS.SOCIALICONS]]
+  NAME = "RSS"
+  URL = "/INDEX.XML"
 
-[params.homeInfoParams]
-  Title = "我的技术与学习博客"
-  Content = "记录技术、学习与实践过程。"
+[PARAMS.HOMEINFOPARAMS]
+  TITLE = "我的技术与学习博客"
+  CONTENT = "记录技术、学习与实践过程。"
 
-[params.fuseOpts]
-  isCaseSensitive = false
-  shouldSort = true
-  location = 0
-  distance = 1000
-  threshold = 0.4
-  minMatchCharLength = 0
-  keys = ["title", "permalink", "summary", "content"]
+[PARAMS.FUSEOPTS]
+  ISCASESENSITIVE = FALSE
+  SHOULDSORT = TRUE
+  LOCATION = 0
+  DISTANCE = 1000
+  THRESHOLD = 0.4
+  MINMATCHCHARLENGTH = 0
+  KEYS = ["TITLE", "PERMALINK", "SUMMARY", "CONTENT"]
 
-[[menu.main]]
-  identifier = "posts"
-  name = "文章"
-  url = "/posts/"
-  weight = 10
+[[MENU.MAIN]]
+  IDENTIFIER = "POSTS"
+  NAME = "文章"
+  URL = "/POSTS/"
+  WEIGHT = 10
 
-[[menu.main]]
-  identifier = "archives"
-  name = "归档"
-  url = "/archives/"
-  weight = 20
+[[MENU.MAIN]]
+  IDENTIFIER = "ARCHIVES"
+  NAME = "归档"
+  URL = "/ARCHIVES/"
+  WEIGHT = 20
 
-[[menu.main]]
-  identifier = "tags"
-  name = "标签"
-  url = "/tags/"
-  weight = 30
+[[MENU.MAIN]]
+  IDENTIFIER = "TAGS"
+  NAME = "标签"
+  URL = "/TAGS/"
+  WEIGHT = 30
 
-[[menu.main]]
-  identifier = "search"
-  name = "搜索"
-  url = "/search/"
-  weight = 40
+[[MENU.MAIN]]
+  IDENTIFIER = "SEARCH"
+  NAME = "搜索"
+  URL = "/SEARCH/"
+  WEIGHT = 40

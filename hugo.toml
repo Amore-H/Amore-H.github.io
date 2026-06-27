@@ -75,3 +75,9 @@ theme = "PaperMod"
   name = "搜索"
   url = "/search/"
   weight = 40
+
+[[menu.main]]
+  identifier = "study"
+  name = "学习"
+  url = "/study/"
+  weight = 15
